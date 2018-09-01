@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+body{
+	background-color: white;
+	color: #000085;
+}
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/logo_2018.png") no-repeat 0px 80px;
+}
