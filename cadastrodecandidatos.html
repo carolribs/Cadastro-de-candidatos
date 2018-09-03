@@ -2,51 +2,69 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8" />
-		<title>Cadastro de Candidatos</title>
-		<link rel="stylesheet" type="text/css" href="_css/estilo.css/>
-		
+		<title>Cadastro de Candidatos</title>	
+	
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
 		
 	</head>
 	<body>
+	
+		<figure id="imagem">
+			<img src="_imagens/logo_2018.png"/>
+			<figcaption/>
+		
 	<div id="interface">
-		<img src="_imagens/logo_2018.png">
+		
 		
 		<header id="cabecalho">
-		<h1> Faça seu cadastro</h1>
+		
+		<h1>Faça seu cadastro</h1>
 		
 		</header>
 		
-		<form metodo="post" id="fContato" action="mailto:contato@eleicao.com"/>
+		<section id="corpo">
 		
-		<fieldset id="cadastro"><legend>Nome</legend>
-		<input type="text" name="tNome" placeholder="Nome do candidato" id="cNome" size="20" maxlength="30"/></p>
+		<form name="cCadastro" metodo="post" id="fcadastro" action="mailto:contato@eleicao.com"/>
+		
+		<fieldset ><legend>Nome</legend>
+		<input type="text" name="tNome" placeholder="Nome do candidato" id="tx_nome" size="20" maxlength="30"/></p>
 		</fieldset>
 		<br>
-		<fieldset id="mail"><legend>E-mail</legend>
-		<input type="e-mail" name"tMail" placeholder="Digite o e-mail" />
+		<fieldset><legend>E-mail</legend>
+		<input type="e-mail" name="tMail" id="mail" placeholder="Digite o e-mail"/>
 		</fieldset>
 		<br>
-		<fieldset id="sexo"><legend>Sexo</legend>
-		<input type="radio" name="sexo" id="cMasc" /> <label for="cMasc">Masculino <br />
-		<input type="radio" name="sexo" id="cFem" /> <label for="cFem">Feminino <br />
+		<fieldset id="rotulos"><legend>Sexo</legend>
+		<input type="radio" name="sexo" id="tx_sexom" /> <label value="m">Masculino <br />
+		<input type="radio" name="sexo" id="tx_sexof" /> <label value="f">Feminino <br />
 		</fieldset>
 		<br>
-		<fieldset id="niver"><legend>Data de Nascimento</legend>
-		<input type="date"n name="tNasc" id="cNasc"/></p>
+		<fieldset><legend>Data de Nascimento</legend>
+		<input type="date" name="tNasc" id="cNasc"/></p>
 		</fieldset>
 		<br>
 		<fieldset id="carg"><legend>Cargo</legend>
 		<select name="tCargo" id="cCargo">
-			<option>Presidente da Repuplica</option>
-			<option>Gorvernador</option>
-			<option>Senador</option>
-			<option>Deputado Federal</option>
-			<option>Deputado Estadual/Distrital</option>
+			<option value="">Selecione</option>
+			<option value="1">Presidente da República</option>
+			<option value="2">Gorvernador</option>
+			<option value="3">Senador</option>
+			<option value="4">Deputado Federal</option>
+			<option value="5">Deputado Estadual/Distrital</option>
 			<select/>
 		</fieldset>
+		</p>
 		
-		<input type="submit" value="Enviar"/>
+		<input type="submit" name="acao" value="Salvar" onclick="validaCampos();"/></p>
+		</section>
+
 		</form>
+		
+		
 	</div>
-	</body>
+			<figure id="imagem2">
+			<img src="_imagens/logo3.png"/>
+			
+<script type="text/javascript" src="validacaoJava.js"></script>
+</body>
 </html>

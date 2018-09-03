@@ -1,12 +1,36 @@
 @charset "UTF-8";
-
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/_bubblegum-sans-regular.otf");
+}
 
 body{
 	background-color: white;
-	color: #000085;
+	color: #191970;
 }
-header#cabecalho{
-	border-bottom: 1px #606060 solid;
-	height: 150px;
-	background: url("../_imagens/logo_2018.png") no-repeat 0px 80px;
+
+section#corpo{
+	display: block;
+	width: 600px;
+}
+
+#interface{
+	width: 600px;
+	height: 800px;
+	margin: 0 auto 0 auto;
+}
+
+header#cabecalho h1{
+	font-family:'fonte logo', sans-serif;
+	color:#191970;
+	margin-top: 50px;
+}
+#imagem{
+	width: 800px;
+	height: 800px;
+	margin: 0 auto 0 auto;
+}
+#imagem2{
+	margin-left: 50px;
+	margin-top: -250px;	
 }
